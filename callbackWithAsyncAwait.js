@@ -80,7 +80,7 @@ async function main(){
         await signUpToSlack()
         await addProfilePic()
         await postNotificationInIntroChannel()
-        console.log(`Handled async code using await keyword`)
+        await finalStatusPrint()        
     }
     catch(err){
     console.log(`Something went wrong`)
